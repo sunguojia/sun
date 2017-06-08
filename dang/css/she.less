@@ -1,0 +1,109 @@
+@import url(m_style.css);
+//封装 宽、高、背景色
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+
+//封装弹性盒
+.box(@tan: horizontal) {
+    display: -webkit-box; //把父元素设置为弹性盒布局
+    -webkit-box-orient: @tan; //为父元素设置子元素的排列方式
+}
+
+html,
+body,
+.container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    .box(vertical);
+    header {
+        .box;
+        .full(100%, 0.88rem, #f93f51);
+        h3 {
+            line-height: 0.88rem;
+            margin-left: 0.39rem;
+            img {
+                .full(0.37rem, 0.37rem, none);
+            }
+        }
+        h1 {
+            margin-left: 2.65rem;
+            line-height: 0.88rem;
+            font-size: 0.32rem;
+            color: #fff;
+        }
+    }
+    section {
+        background: #ccc;
+        -webkit-box-flex: 1;
+        background: #f3f3f3;
+       
+        p {
+            .box;
+            .full(100%, 0.85rem, #fff);
+            border-bottom: 1px solid #ccc;
+            a {
+                font-size: 0.25rem;
+                line-height: 0.85rem;
+                margin-left: 0.4rem;
+                color: #000;
+            }
+            span {
+                display: block;
+                .full(0.13rem, 0.24rem, none);
+                margin-left: 5rem;
+                margin-top: 0.3rem;
+                font-size: 0.25rem;
+                a {
+                    display: block;
+                    .full(0.13rem, 0.24rem, none);
+                    background: url(../fan.png)no-repeat;
+                    background-size: 100% auto;
+                }
+            }
+        }
+             .firs {
+            margin-top: 0.12rem;
+            height: 1.2rem;
+            span{
+                margin-top: 0.1rem;
+                a{
+                     display: block;
+                    .full(0.93rem, 0.93rem, none);
+                    background: url(../img2/nv.png)no-repeat;
+                    background-size: 100% auto;
+                }
+            }
+        }
+        .b{
+            .full(100%,0.85remrem,#fff);
+            a{
+                line-height: 0.85rem;
+            }
+            span{
+                margin-left: 4rem;
+                display: block;
+//              line-height: 0.85rem;
+                .full(2.7rem,auto,none);
+                color: #969696;
+            }
+        }
+        .dd {
+            display: block;
+            .full(6.69rem, 0.87rem, #f9384b);
+            color: #fff;
+            font-size: 0.25rem;
+            border-radius: 0.3rem;
+            margin-top: 1.75rem;
+            text-align: center;
+            line-height: 0.87rem;
+            margin-left: 0.4rem;
+        }
+    }
+}

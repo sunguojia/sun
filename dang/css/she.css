@@ -1,0 +1,114 @@
+@import url(m_style.css);
+html,
+body,
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.container {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.container header {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 0.88rem;
+  background: #f93f51;
+}
+.container header h3 {
+  line-height: 0.88rem;
+  margin-left: 0.39rem;
+}
+.container header h3 img {
+  width: 0.37rem;
+  height: 0.37rem;
+  background: none;
+}
+.container header h1 {
+  margin-left: 2.65rem;
+  line-height: 0.88rem;
+  font-size: 0.32rem;
+  color: #fff;
+}
+.container section {
+  background: #ccc;
+  -webkit-box-flex: 1;
+  background: #f3f3f3;
+}
+.container section p {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 0.85rem;
+  background: #ffffff;
+  border-bottom: 1px solid #ccc;
+}
+.container section p a {
+  font-size: 0.25rem;
+  line-height: 0.85rem;
+  margin-left: 0.4rem;
+  color: #000;
+}
+.container section p span {
+  display: block;
+  width: 0.13rem;
+  height: 0.24rem;
+  background: none;
+  margin-left: 5rem;
+  margin-top: 0.3rem;
+  font-size: 0.25rem;
+}
+.container section p span a {
+  display: block;
+  width: 0.13rem;
+  height: 0.24rem;
+  background: none;
+  background: url(../fan.png) no-repeat;
+  background-size: 100% auto;
+}
+.container section .firs {
+  margin-top: 0.12rem;
+  height: 1.2rem;
+}
+.container section .firs span {
+  margin-top: 0.1rem;
+}
+.container section .firs span a {
+  display: block;
+  width: 0.93rem;
+  height: 0.93rem;
+  background: none;
+  background: url(../img2/nv.png) no-repeat;
+  background-size: 100% auto;
+}
+.container section .b {
+  width: 100%;
+  height: 0.85remrem;
+  background: #ffffff;
+}
+.container section .b a {
+  line-height: 0.85rem;
+}
+.container section .b span {
+  margin-left: 4rem;
+  display: block;
+  width: 2.7rem;
+  height: auto;
+  background: none;
+  color: #969696;
+}
+.container section .dd {
+  display: block;
+  width: 6.69rem;
+  height: 0.87rem;
+  background: #f9384b;
+  color: #fff;
+  font-size: 0.25rem;
+  border-radius: 0.3rem;
+  margin-top: 1.75rem;
+  text-align: center;
+  line-height: 0.87rem;
+  margin-left: 0.4rem;
+}
